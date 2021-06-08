@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/brown"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/rltv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottombar"
+        android:background="@drawable/rounded_card"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/gambar"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/rounded_card2"
+            app:layout_constraintVertical_bias="0.03">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/leg" />
+
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal|left"
+                    android:background="@drawable/rounded_back"
+                    android:drawableStart="@drawable/ic_baseline_arrow_back_ios_24"
+                    android:layout_margin="10dp"
+                    android:onClick="kembali"
+                    android:padding="13dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/qsbold"
+                    android:padding="10dp"
+                    android:text="@string/LEG"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:fontFamily="@font/qsbold"
+                    android:padding="10dp"
+                    android:text="@string/leginfo"
+                    android:textColor="@color/white" />
+
+            </androidx.cardview.widget.CardView>
+
+        </FrameLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/gambar"
+            android:layout_marginBottom="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/squatcard"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/rounded_card3"
+                    android:clickable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:orientation="horizontal"
+                    app:cardCornerRadius="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/squat"
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/squat2" />
+
+                        <TextView
+                            android:id="@+id/txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/squat"
+                            android:fontFamily="@font/qsbold"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="10dp"
+                            android:text="Squat"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txt"
+                            android:layout_alignParentBottom="true"
+                            android:layout_toRightOf="@+id/squat"
+                            android:fontFamily="@font/qsbold"
+                            android:paddingLeft="10dp"
+                            android:text="15x"
+                            android:textSize="10dp" />
+
+                        <TextView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerInParent="true"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ic_baseline_arrow_forward_ios_24" />
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/sidehopcard"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/rounded_card3"
+                    android:clickable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:orientation="horizontal"
+                    app:cardCornerRadius="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/sidehop"
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/sidehop2" />
+
+                        <TextView
+                            android:id="@+id/txt2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/sidehop"
+                            android:fontFamily="@font/qsbold"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="10dp"
+                            android:text="Side Hop"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txt2"
+                            android:layout_alignParentBottom="true"
+                            android:layout_toRightOf="@+id/sidehop"
+                            android:fontFamily="@font/qsbold"
+                            android:paddingLeft="10dp"
+                            android:text="30sec"
+                            android:textSize="10dp" />
+
+                        <TextView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerInParent="true"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ic_baseline_arrow_forward_ios_24" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/sidelyingleftcard"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/rounded_card3"
+                    android:clickable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:orientation="horizontal"
+                    app:cardCornerRadius="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/sidelyingleft"
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/sidelyingleft" />
+
+                        <TextView
+                            android:id="@+id/txt3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/sidelyingleft"
+                            android:fontFamily="@font/qsbold"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="10dp"
+                            android:text="Side Lying Leg Lift Left"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txt3"
+                            android:layout_alignParentBottom="true"
+                            android:layout_toRightOf="@+id/sidelyingleft"
+                            android:fontFamily="@font/qsbold"
+                            android:paddingLeft="10dp"
+                            android:text="12x"
+                            android:textSize="10dp" />
+
+                        <TextView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerInParent="true"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ic_baseline_arrow_forward_ios_24" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/sidelyingrightcard"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/rounded_card3"
+                    android:clickable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:orientation="horizontal"
+                    app:cardCornerRadius="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/sidelyingright"
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/sidelyingright" />
+
+                        <TextView
+                            android:id="@+id/txt4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/sidelyingright"
+                            android:fontFamily="@font/qsbold"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="10dp"
+                            android:text="Side Lying Leg Lift Right"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txt4"
+                            android:layout_alignParentBottom="true"
+                            android:layout_toRightOf="@+id/sidelyingright"
+                            android:fontFamily="@font/qsbold"
+                            android:paddingLeft="10dp"
+                            android:text="12x"
+                            android:textSize="10dp" />
+
+                        <TextView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerInParent="true"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ic_baseline_arrow_forward_ios_24" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/backwardlungecard"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/rounded_card3"
+                    android:clickable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:orientation="horizontal"
+                    app:cardCornerRadius="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/backwardlunge"
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/backwardlunge2" />
+
+                        <TextView
+                            android:id="@+id/txt5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/backwardlunge"
+                            android:fontFamily="@font/qsbold"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="10dp"
+                            android:text="Backward Lunge"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txt5"
+                            android:layout_alignParentBottom="true"
+                            android:layout_toRightOf="@+id/backwardlunge"
+                            android:fontFamily="@font/qsbold"
+                            android:paddingLeft="10dp"
+                            android:text="14sec"
+                            android:textSize="10dp" />
+
+                        <TextView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerInParent="true"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ic_baseline_arrow_forward_ios_24" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/leftquadcard"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/rounded_card3"
+                    android:clickable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:orientation="horizontal"
+                    app:cardCornerRadius="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/leftquad"
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/leftquadgif" />
+
+                        <TextView
+                            android:id="@+id/txt6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/leftquad"
+                            android:fontFamily="@font/qsbold"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="10dp"
+                            android:text="Left Quad Stretch With Wall"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txt6"
+                            android:layout_alignParentBottom="true"
+                            android:layout_toRightOf="@+id/leftquad"
+                            android:fontFamily="@font/qsbold"
+                            android:paddingLeft="10dp"
+                            android:text="30sec"
+                            android:textSize="10dp" />
+
+                        <TextView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerInParent="true"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ic_baseline_arrow_forward_ios_24" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/rightquadcard"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/rounded_card3"
+                    android:clickable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:orientation="horizontal"
+                    app:cardCornerRadius="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/rightquad"
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/rightquadgif" />
+
+                        <TextView
+                            android:id="@+id/txt7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/rightquad"
+                            android:fontFamily="@font/qsbold"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="10dp"
+                            android:text="Right Quad Stretch With Wall"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txt7"
+                            android:layout_alignParentBottom="true"
+                            android:layout_toRightOf="@+id/rightquad"
+                            android:fontFamily="@font/qsbold"
+                            android:paddingLeft="10dp"
+                            android:text="30sec"
+                            android:textSize="10dp" />
+
+                        <TextView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerInParent="true"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ic_baseline_arrow_forward_ios_24" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottombar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:padding="25dp">
+
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/rounded_button"
+            android:fontFamily="@font/qsbold"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:text="@string/start"
+            android:textColor="@color/brown"
+            android:theme="@style/btn_start" />
+
+    </FrameLayout>
+
+</RelativeLayout>
+
+

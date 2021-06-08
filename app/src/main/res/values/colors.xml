@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFF</color>
+    <color name="brown">#B08C6C</color>
+    <color name="transparent">#00000000</color>
+    <color name="background_workout">#4BBCBCBC</color>
+    <color name="background_work">#E8E7E7</color>
+    <style name="btn_start">
+        <item name="colorPrimary">@color/white</item>
+    </style>
+    <style name="fragment">
+        <item name="colorPrimary">@color/brown</item>
+    </style>
+    <style name="BackgroundWorkout">
+        <item name="colorPrimary">@color/background_workout</item>
+    </style>
+    <style name="BackgroundHome">
+        <item name="colorPrimary">@color/brown</item>
+    </style>
+</resources>

@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Movyn</string>
+    <string name="home">Home</string>
+    <string name="start">Start</string>
+    <string name="info_aboutus">This application will help you in exercising.</string>
+    <string name="info_aboutusp2">For those of you who dont have time to exercise to the gym, you can do it easily at home.</string>
+    <string name="info_aboutusp3">Honestly it can be done anywhere not only at home you can choose the category of mevement you want to do, </string>
+    <string name="info_aboutusp4">you just have to follow the step by step that we have provided in the application its easy, healthy and useful that the application we made</string>
+    <string name="sereal">the ideal foods to be consumed after exercise are foods that contain carbohydrates and protein, at least 45 minutes after exercises.</string>
+    <string name="fastfood">Eating large amounts of fast food leads to obesity, a source of various health problems such as diabetes.</string>
+    <string name="besttime">2pm to 6pm, human body temperature reaches its peak. This means that when you exercise of these times, your body is in the most ready condition.</string>
+    <string name="prevent">Regular exercises every day or at least 3 times per week can strengthen the heart muscle.</string>
+    <string name="maintain">Doing regular physical activity can reduce body fat tissue and lose weight.</string>
+    <string name="reducing">Regular exercise plays a role in preventing bone loss or osteoporosis.</string>
+    <string name="ideal">Ideal body weight. Can make you more confident about your appreance and grow.</string>
+    <string name="sleep">These activities can also help you sleep faster and better.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- ABS WORKOUT -->
+    <string name="ABS">ABS Workout</string>
+    <string name="absinfo">Abs workouts can strengthen the spine area and improve posture because oil body weight is evenly distributed</string>
+
+    <!-- CHEST WORKOUT-->
+    <string name="CHEST">Chest Workout</string>
+    <string name="chestinfo">The main concentration of this exercise is to increase the strength of the chest muscles and arm muscles.</string>
+
+    <!-- ARM WORKOUT-->
+    <string name="ARM">Arm Workout</string>
+    <string name="arminfo">increases muscle stability and activation</string>
+
+    <!--LEG WORKOUT-->
+    <string name="LEG">Leg Workout</string>
+    <string name="leginfo">increases muscle stability and activation</string>
+
+    <!--BUTT WORKOUT-->
+    <string name="BUTT">Butt Workout</string>
+    <string name="buttinfo">an excellent workout for toning your glutes, hips, and thighs</string>
+</resources>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.workout">
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/dumbell_100dp"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".WorkoutResultButt"></activity>
+        <activity android:name=".WorkoutResultLeg" />
+        <activity android:name=".WorkoutResultArm" />
+        <activity android:name=".WorkoutResultChest" />
+        <activity android:name=".WorkoutStarted">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".WorkoutButt" />
+        <activity android:name=".WorkoutLeg" />
+        <activity android:name=".WorkoutArm" />
+        <activity android:name=".WorkoutChest" />
+        <activity android:name=".WorkoutAbs" />
+        <activity android:name=".WorkoutActivity" />
+        <activity android:name=".CountdownActivity" />
+        <activity android:name=".WorkoutTimerSitup" />
+        <activity android:name=".WorkoutTimerRussiantwist" />
+        <activity android:name=".WorkoutTimerMountainclimber" />
+        <activity android:name=".WorkoutTimerLegraises" />
+        <activity android:name=".WorkoutTimerPlank" />
+        <activity android:name=".WorkoutTimerCobrastretch" />
+        <activity android:name=".WorkoutTimerPushup" />
+        <activity android:name=".WorkoutTimerWidearmpushup" />
+        <activity android:name=".WorkoutTimerKneepushup" />
+        <activity android:name=".WorkoutTimerInclinepushup" />
+        <activity android:name=".WorkoutTimerCobrastretch2" />
+        <activity android:name=".WorkoutTimerArmraises" />
+        <activity android:name=".WorkoutTimerSidearmraises" />
+        <activity android:name=".WorkoutTimerDiamondpushup" />
+        <activity android:name=".WorkoutTimerAlternatehammercurl" />
+        <activity android:name=".WorkoutTimerTricepsstretchleft" />
+        <activity android:name=".WorkoutTimerTricepsstretchright" />
+        <activity android:name=".WorkoutTimerSquat" />
+        <activity android:name=".WorkoutTimerSidehop" />
+        <activity android:name=".WorkoutTimerSidelyinglegliftleft" />
+        <activity android:name=".WorkoutTimerSidelyinglegliftright" />
+        <activity android:name=".WorkoutTimerBackwardlunge" />
+        <activity android:name=".WorkoutTimerLeftquadstretchwithwall" />
+        <activity android:name=".WorkoutTimerRightquadstretchwithwall" />
+        <activity android:name=".WorkoutTimerSquat2" />
+        <activity android:name=".WorkoutTimerDonkeykickleft" />
+        <activity android:name=".WorkoutTimerDonkeykickright" />
+        <activity android:name=".WorkoutTimerGlutebridge" />
+        <activity android:name=".WorkoutTimerStandingkickbacksleft" />
+        <activity android:name=".WorkoutTimerStandingkickbacksright" />
+        <activity android:name=".WorkoutResult" />
+    </application>
+
+</manifest>
